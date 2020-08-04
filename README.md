@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is official pytorch implementation of paper *Stable Video Style Transfer Based on Partial Convolution with Depth-Aware Supervision*. The baseline in the paper is [Cycle-GAN](https://arxiv.org/pdf/1703.10593.pdf), and this project is developed based on their [opensource pytorch implementation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). The system overview is shown below.
+This code is written by Songhua Liu, State Key Laboratory of New Technology of Computer Software, Nanjing University and it is the official pytorch implementation of paper [*Stable Video Style Transfer Based on Partial Convolution with Depth-Aware Supervision*](http://47.103.30.151/research/PartialConvDepthLossVST.pdf), published on [ACM MM 2020](https://2020.acmmm.org). The baseline in the paper is [Cycle-GAN](https://arxiv.org/pdf/1703.10593.pdf), and this project is developed based on their [opensource pytorch implementation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). The system overview is shown below.
 
-![](images/overview.png)
+![](images/framework.jpg)
 
 As shown in the figure, there are three modules beyond the contribution of this repository: optical flow estimation module, occlusion and motion mask estimation module, and depth estimation module. In the paper, optical flow estimation module is [FlowNet 2.0](https://github.com/NVIDIA/flownet2-pytorch), motion mask estimation module is a forward-backward consistency checker from [here](https://github.com/manuelruder/artistic-videos/tree/master/consistencyChecker), and depth estimation module is from paper [*Single Image Depth Perception in the Wild*](https://arxiv.org/abs/1604.03901).
 
@@ -40,7 +40,7 @@ Some example:
 * Clone this repository:
 
   ```shell
-  git clone https://github.com/AnAnonymousProgrammer/Artistic-Video-State-of-the-Art
+  git clone https://github.com/Huage001/Artistic-Video-Partial-Conv-Depth-Loss
   cd Artistic-Video-State-of-the-Art
   ```
 
