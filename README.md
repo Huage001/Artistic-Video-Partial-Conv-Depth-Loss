@@ -1,5 +1,7 @@
 # Stable Video Style Transfer Based on Partial Convolution with Depth-Aware Supervision
 
+> [[Paper]](http://47.103.30.151/research/PartialConvDepthLossVST.pdf) [[Code]](https://github.com/Huage001/Artistic-Video-Partial-Conv-Depth-Loss) [[Supplementary Video]](http://47.103.30.151/research/PartialConvDepthLossVST.wmv)
+
 ## Overview
 
 This code is written by Songhua Liu, State Key Laboratory of New Technology of Computer Software, Nanjing University and it is the official pytorch implementation of paper [*Stable Video Style Transfer Based on Partial Convolution with Depth-Aware Supervision*](http://47.103.30.151/research/PartialConvDepthLossVST.pdf), published on [ACM MM 2020](https://2020.acmmm.org). The baseline in the paper is [Cycle-GAN](https://arxiv.org/pdf/1703.10593.pdf), and this project is developed based on their [opensource pytorch implementation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). The system overview is shown below.
@@ -10,7 +12,7 @@ As shown in the figure, there are three modules beyond the contribution of this 
 
 There is already a depth estimation module in this repository from [here](https://github.com/yifjiang/relative-depth-using-pytorch). As for optical flow and mask estimation modules, you can follow their guide to set them up. You can also try other estimation algorithms freely.
 
-Some example: 
+Some examples are shown below. For more results, please refer to our [Supplementary Video](http://47.103.30.151/research/PartialConvDepthLossVST.wmv).
 
 * Video to VanGogh:
 
@@ -41,7 +43,7 @@ Some example:
 
   ```shell
   git clone https://github.com/Huage001/Artistic-Video-Partial-Conv-Depth-Loss
-  cd Artistic-Video-State-of-the-Art
+  cd Artistic-Video-Partial-Conv-Depth-Loss
   ```
 
 * Dataset preparation:
